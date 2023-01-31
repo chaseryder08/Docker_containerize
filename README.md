@@ -10,7 +10,7 @@
     * requests - allows you to send HTTP requests using Python. 
     * Beautiful soup - package to parse html/xml to extract data
 
-![alt text](Docker1.PNG)
+![alt text](images/Docker1.PNG)
 2) Create docker image: 
 
 - specify base image FROM 
@@ -22,7 +22,7 @@
 -  docker build -t dockerfun .
 - pulls python image, adds main.py, then install modules
 
-![alt text](Docker2.PNG)
+![alt text](images/Docker2.PNG)
 4) Start container 
    - docker run -t -i dockerfun
     * (-i = gives sudo terminal / -i - puts in interactive mode since there is user input requested)
@@ -51,12 +51,12 @@
  * put in arguments in uvicorn.run(app, port=8000, host="0.0.0.0")
  * Need to specify host address and port
 
-![alt text](docker_web.PNG)
+![alt text](images/docker_web.PNG)
 
 9) rebuild image :
 > docker build -t python-fastapi .
 > docker run -p 8000:8000 python-fastapi 
-![docker](dockerps2.PNG)
+![docker](images/dockerps2.PNG)
 10) Check docker hub can see container
 11) In terminal, 'docker ps' shows running docker containers
 12) Can access docker container terminal in docker hub or in terminal --
